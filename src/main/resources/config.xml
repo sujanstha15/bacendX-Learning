@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+
+">
+
+<!--“Hey Spring, go look inside the package com.substring.concepts.core (and its sub-packages) for classes annotated with @Component, @Service, @Repository, or @Controller and automatically register them as beans in the Spring container.-->
+
+
+<context:component-scan base-package="com.substring.concepts.core"/>
+<!--    the error in the context is because there is no name space-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Write object = beans(in terms of spring) and dependencies here -->
+<!--    first we need engine and then we make car
+so engine object will be created and then car object
+-->
+<!--    <bean class="com.substring.concepts.core.Engine" id="engine">-->
+
+<!--        <property name="companyName" value="Ford"> </property>-->
+<!--    </bean>-->
+
+<!--&lt;!&ndash;    car is also a bean, so we will create a bean which is just basically object in java, since it is managed by spring, it will be beans&ndash;&gt;-->
+<!--    <bean class="com.substring.concepts.core.Car" id="car">-->
+
+<!--&lt;!&ndash;        the property are name of the instance variable of Car class-->
+<!--            we are using ref in engine because it is an object-->
+<!--&ndash;&gt;-->
+<!--        <property name="name" value="Camry"> </property>-->
+<!--        <property name="engine" ref="engine"> </property>-->
+
+<!--    </bean>-->
+
+
+</beans>
+
